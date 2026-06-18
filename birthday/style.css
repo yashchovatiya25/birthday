@@ -1,0 +1,429 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+    height:100vh;
+}
+
+.page{
+    position:absolute;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    overflow:hidden;
+    padding:20px;
+    text-align:center;
+}
+
+.page.active{
+    display:flex;
+}
+
+/* ==========================
+   COMMON BUTTON
+========================== */
+
+.magic-btn{
+    margin-top:35px;
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:1.1rem;
+    font-weight:600;
+    color:white;
+    background:linear-gradient(45deg,#ff1493,#ff69b4);
+    box-shadow:0 0 25px rgba(255,20,147,.5);
+    transition:.4s;
+}
+
+.magic-btn:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+.hidden{
+    display:none;
+}
+
+/* ==========================
+   PAGE 1
+   MYSTERY THEME
+========================== */
+
+.page1{
+    background:
+    linear-gradient(
+    135deg,
+    #140028,
+    #2d004d,
+    #59004f
+    );
+}
+
+.gift-box{
+    font-size:120px;
+    animation:giftFloat 2s ease-in-out infinite;
+}
+
+@keyframes giftFloat{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.mystery-title{
+    font-family:'Pacifico',cursive;
+    color:white;
+    font-size:5rem;
+    margin-top:10px;
+}
+
+.typewriter{
+    color:#fff;
+    max-width:700px;
+    font-size:2rem;
+    margin-top:20px;
+    line-height:1.5;
+    text-shadow:0 0 10px #ff66cc;
+}
+
+.star{
+    position:absolute;
+    color:white;
+    animation:twinkle 2s infinite;
+}
+
+@keyframes twinkle{
+    50%{
+        opacity:.2;
+    }
+}
+
+/* ==========================
+   PAGE 2
+   BIRTHDAY CELEBRATION
+========================== */
+
+.page2{
+    background:
+    linear-gradient(
+    135deg,
+    #ff9a9e,
+    #fad0c4,
+    #fbc2eb
+    );
+}
+
+.birthday-card{
+    width:90%;
+    max-width:900px;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(10px);
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 0 30px rgba(255,255,255,.4);
+}
+
+.birthday-heading{
+    font-family:'Great Vibes',cursive;
+    font-size:6rem;
+    color:#ff1493;
+    margin-bottom:25px;
+}
+
+.birthday-message{
+    font-size:1.8rem;
+    line-height:1.8;
+    color:#6b005a;
+    font-weight:600;
+}
+
+.balloon{
+    position:absolute;
+    font-size:50px;
+    animation:balloonMove linear infinite;
+}
+
+@keyframes balloonMove{
+    from{
+        transform:translateY(120vh);
+    }
+    to{
+        transform:translateY(-150px);
+    }
+}
+
+/* ==========================
+   PAGE 3
+   CAKE PAGE
+========================== */
+
+.page3{
+    background:
+    radial-gradient(
+    circle,
+    #fff7d6,
+    #ffd89b
+    );
+}
+
+.cake-title{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    color:#ff1493;
+}
+
+.cake-instruction{
+    font-size:1.4rem;
+    color:#a4005a;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.cake{
+    cursor:pointer;
+    transition:.5s;
+}
+
+.cake:hover{
+    transform:scale(1.05);
+}
+
+.layer{
+    border-radius:15px;
+    margin:auto;
+}
+
+.top{
+    width:180px;
+    height:60px;
+    background:#ff6b81;
+}
+
+.middle{
+    width:230px;
+    height:70px;
+    background:#feca57;
+}
+
+.bottom{
+    width:280px;
+    height:80px;
+    background:#ff9f43;
+}
+
+.candle{
+    width:15px;
+    height:50px;
+    background:white;
+    margin:auto;
+}
+
+.flame{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:gold;
+    margin:auto;
+    animation:flicker .3s infinite alternate;
+}
+
+@keyframes flicker{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.2);
+    }
+}
+
+.cake-message{
+    margin-top:25px;
+    font-size:2rem;
+    color:#ff1493;
+    font-weight:bold;
+}
+
+.chocolate{
+    position:absolute;
+    top:-50px;
+    font-size:35px;
+    animation:chocolateRain linear forwards;
+}
+
+@keyframes chocolateRain{
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+/* ==========================
+   PAGE 4
+   SCRAPBOOK GALLERY
+========================== */
+
+.page4{
+    background:
+    linear-gradient(
+    135deg,
+    #ffe29f,
+    #ffa99f
+    );
+}
+
+.memory-title{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    color:#ff006e;
+    margin-bottom:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.photo-card{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.photo-card:nth-child(odd){
+    transform:rotate(-5deg);
+}
+
+.photo-card:nth-child(even){
+    transform:rotate(5deg);
+}
+
+.photo-card:hover{
+    transform:scale(1.1) rotate(0deg);
+}
+
+.photo-card img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* ==========================
+   PAGE 5
+   LOVE LETTER
+========================== */
+
+.page5{
+    background:
+    linear-gradient(
+    180deg,
+    #071330,
+    #0f2347,
+    #162d5c
+    );
+    color:white;
+}
+
+.love-title{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.love-letter{
+    width:90%;
+    max-width:900px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:30px;
+    line-height:2;
+    font-size:1.2rem;
+}
+
+.teddy{
+    font-size:180px;
+    margin-top:20px;
+    animation:teddyBounce 2s infinite;
+}
+
+@keyframes teddyBounce{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.lantern{
+    position:absolute;
+    font-size:35px;
+    animation:lanternFloat linear infinite;
+}
+
+@keyframes lanternFloat{
+    from{
+        transform:translateY(120vh);
+    }
+    to{
+        transform:translateY(-150px);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    .mystery-title{
+        font-size:3rem;
+    }
+
+    .typewriter{
+        font-size:1.3rem;
+    }
+
+    .birthday-heading{
+        font-size:4rem;
+    }
+
+    .birthday-message{
+        font-size:1.2rem;
+    }
+
+    .cake-title{
+        font-size:3rem;
+    }
+
+    .memory-title{
+        font-size:3rem;
+    }
+
+    .love-title{
+        font-size:3rem;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .photo-card img{
+        width:140px;
+        height:140px;
+    }
+
+    .teddy{
+        font-size:120px;
+    }
+}

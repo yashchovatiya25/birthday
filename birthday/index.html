@@ -1,0 +1,235 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Bauuu ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<section class="page active page1" id="page1">
+
+<div id="stars"></div> 
+
+<div class="gift-box">
+🎁
+</div>
+
+<h1 class="mystery-title">
+Ohhhh...
+</h1>
+
+<div class="typewriter">
+Do You Want To Know What Makes Today So Special?
+</div>
+
+<button class="magic-btn" onclick="nextPage(2)">
+Open The Surprise ✨
+</button>
+
+</section>
+
+<!-- PAGE 2 -->
+
+<section class="page page2" id="page2">
+
+<div id="balloons"></div>
+
+<div class="birthday-card">
+
+<h1 class="birthday-heading">
+Happy Birthday 🎂
+</h1>
+
+<div class="birthday-message">
+
+Ohhhh My Beautiful Bauuu ❤️
+
+<br><br>
+
+It's Your 20th Birthday!!
+
+<br><br>
+
+And Somehow You Keep Growing
+
+Younger Every Single Day 😘✨
+
+<br><br>
+
+May Your Smile Always Shine Brighter Than The Stars.
+
+</div>
+
+<button class="magic-btn" onclick="nextPage(3)">
+Here Is Your Cake 🍰
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 3 -->
+
+<section class="page page3" id="page3">
+
+<div class="cake-page-container">
+
+<h1 class="cake-title">
+Birthday Cake 🎂
+</h1>
+
+<p class="cake-instruction">
+Click On The Cake To Cut It ✨
+</p>
+
+<div class="cake-wrapper">
+
+<div class="cake" id="cake" onclick="cutCake()">
+
+<div class="flame"></div>
+
+<div class="candle"></div>
+
+<div class="layer top"></div>
+
+<div class="layer middle"></div>
+
+<div class="layer bottom"></div>
+
+</div>
+
+</div>
+
+<div class="cake-message" id="cakeMessage">
+</div>
+
+<button
+class="magic-btn hidden"
+id="galleryBtn"
+onclick="nextPage(4)">
+Open Our Memories 📸
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 4 -->
+
+<section class="page page4" id="page4">
+
+<h1 class="memory-title">
+Our Beautiful Memories ❤️
+</h1>
+
+<div class="gallery">
+
+<div class="photo-card">
+<img src="image1.jpeg" alt="">
+</div>
+
+<div class="photo-card">
+<img src="image2.jpeg" alt="">
+</div>
+
+<div class="photo-card">
+<img src="image3.jpeg" alt="">
+</div>
+
+<div class="photo-card">
+<img src="image4.jpeg" alt="">
+</div>
+
+<div class="photo-card">
+<img src="image5.jpeg" alt="">
+</div>
+
+<div class="photo-card">
+<img src="image6.jpeg" alt="">
+</div>
+
+</div>
+
+<button class="magic-btn" onclick="nextPage(5)">
+Read My Heart 💌
+</button>
+
+</section>
+
+<!-- PAGE 5 -->
+
+<section class="page page5" id="page5">
+
+<div id="lanterns"></div>
+
+<h1 class="love-title">
+For My love ❤️
+</h1>
+
+<div class="love-letter">
+
+<p id="typedLetter">
+
+My Dearest Love,
+
+Today is not just your birthday.
+
+It is the celebration of the most beautiful soul who entered my life and filled it with happiness.
+
+Thank you for every smile,
+every laugh,
+every memory,
+and every beautiful moment we have shared.
+
+On your special day,
+I wish that all your dreams come true.
+
+May happiness follow you everywhere.
+
+May success always find you.
+
+May your smile never fade.
+
+And may your heart always remain as beautiful as it is today.
+
+Happy 20th Birthday My Bauuu ❤️
+
+I Love You More Than Words Can Ever Describe.
+
+Forever Yours ❤️
+
+</p>
+
+</div>
+
+<div class="teddy">
+🧸
+</div>
+
+</section>
+
+<!-- AUDIO -->
+
+<audio autoplay loop>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
